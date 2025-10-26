@@ -4,54 +4,46 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Liverpool</title>
+       
         <link href="./src/output.css" rel="stylesheet" />
     </head>
-    <body class="text-white">
-        <header class="main-menu absolute left-0 right-0">
+    <body class="text-white font-poppins">
+        <header class="main-menu bg-blue-500">
             <div class="md:grid md:grid-rows-2 px-2">
                 <div class="flex justify-between items-center">
-                    <a href="./index.html" class="bg-red-500 p-0">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 100 100"
-                            class="w-40 h-40 flex-shrink-0 self-center"
-                        >
-                            <image
-                                href="./src/images/logo.svg"
-                                class="invert brightness-0"
-                                width="100"
-                                height="100"
-                            />
-                        </svg>
-                        <!--<img src="./src/images/logo.svg" alt="" />-->
+                    <a
+                        href="./index.html"
+                        class=" w-20 flex items-center"
+                    >
+                        <img
+                            src="./src/images/logo.svg"
+                            class="invert brightness-0"
+                            height="100"
+                        />
                     </a>
-                    <div class="md:hidden flex items-center">
+                    <div class="md:hidden flex items-center gap-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="lucide lucide-search-icon lucide-search"
+                            class="lucide lucide-search-icon lucide-search w-20 h-5"
                         >
                             <path d="m21 21-4.34-4.34" />
                             <circle cx="11" cy="11" r="8" />
                         </svg>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 34 24"
+                            viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="lucide lucide-menu-icon lucide-menu"
+                            class="lucide lucide-menu-icon lucide-menu w-15 h-10"
                         >
                             <path d="M4 5h16" />
                             <path d="M4 12h16" />
@@ -82,14 +74,74 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="">
-                <picture>
-                    <source media="" src="./src/images/jan-starts-sm.webp" />
-                    <img src="./src/images/jan-starts-sm.webp" alt="" />
+        <main class="bg-blue-500">
+            <div class=" bg-red-500 relative">
+                <picture class="">
+                    <source
+                        media="(orientation: portrait)"
+                        src="./src/images/jan-starts-sm.webp"
+                    />
+                    <img
+                        class="overflow-clip [overflow-clip-margin:content-box]"
+                        src="./src/images/jan-starts-sm.webp"
+                        alt=""
+                        height="1280"
+                        width="1920"
+                    />
                 </picture>
-                <h3>Hello</h3>
+                <div class="flex flex-col absolute top-80 px-4.5">
+                    <div class="grid grid-rows-2 grid-cols-7 col-gap-1">
+                        <h2 class="row-start-1 col-span-6 leading-none p-4 w-fit font-bold border-[3px] text-white text-wrap text-[2.07rem] uppercase">
+                            Make 2026 your year
+                        </h2>
+                        <p class="row-start-2 col-start-1 col-span-7 text-white px-4 border-s-stone-50 text-[1.2rem] leading-tight text-wrap w-fit max-w-[125ch] p-4 border-[3px] mt-[3px]">
+                            We offer a range of master’s courses in business and
+                            management, allied health, computer science and
+                            engineering all available to start in January 2026.
+                        </p>
+                    </div>
+                    <div class="border py-4 text-center  border-s-stone-50 mt-2">
+                        <a href="" class="relative inline-block after:content-[url('./src/images/arrow.svg')] after:ml-2 after:align-middle after:bg-red-600">Discover our January courses</a>
+                    </div>
+                </div>
             </div>
+            <!--search courses-->
+            <section class="bg-red-500 mt-36">
+                <form action="">
+                    <fieldset>
+                        <div>
+                            <label for="">Find your course</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <button type="submit">
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <fieldset>
+                            <legend></legend>
+                            <div>
+                                <div>
+                                    <input type="radio" />
+                                    <label for="">Undergraduate</label>
+                                </div>
+                                <div>
+                                    <input type="radio" />
+                                    <label for="">Postgraduate taught</label>
+                                </div>
+                                <div>
+                                    <input type="radio" />
+                                    <label for="">Postgraduate research</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            <!-- /search courses -->
         </main>
+
     </body>
 </html>
