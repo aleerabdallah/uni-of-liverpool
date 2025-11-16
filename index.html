@@ -90,8 +90,8 @@
                     />
                 </picture>
                 <div class="flex flex-col absolute top-80 px-4.5">
-                    <div class="grid grid-rows-2 grid-cols-7 col-gap-1">
-                        <h2 class="row-start-1 col-span-6 leading-none p-4 w-fit font-bold border-[3px] text-white text-wrap text-[2.07rem] uppercase">
+                    <div class="grid grid-rows-2 grid-cols-7 col-gap-1 p-0">
+                        <h2 class="row-start-1 col-span-6 leading-none px-4 w-fit font-bold border-[3px] text-white text-wrap text-[2.07rem] uppercase">
                             Make 2026 your year
                         </h2>
                         <p class="row-start-2 col-start-1 col-span-7 text-white px-4 border-s-stone-50 text-[1.2rem] leading-tight text-wrap w-fit max-w-[125ch] p-4 border-[3px] mt-[3px]">
@@ -106,41 +106,47 @@
                 </div>
             </div>
             <!--search courses-->
-            <section class="bg-red-500 mt-36">
-                <form action="">
-                    <fieldset>
-                        <div>
-                            <label for="">Find your course</label>
-                            <input type="text" />
+            <section class="mt-36 py-4 bg-[rgba(33,43,88,1)]">
+                <form action="" class="grid grid-cols-12 px-4 gap-4">
+                    <!-- First row -->
+                    <fieldset class="col-span-9 grid grid-cols-9">
+                        <div class="col-start-1 col-span-8 grid grid-cols-8 gap-3">
+                            <label for="" class="col-start-1 col-span-2 flex items-center justify-end text-[1.3rem] font-bold ">Find your course</label>
+                            <input type="text" class="col-start-3 col-span-8 bg-white p-4" />
                         </div>
-                        <div>
-                            <button type="submit">
-                                <span>Search</span>
+                        <div class="ml-4 col-start-9 grid grid-cols-1 col-span-1 border border-amber-50">
+                            <button type="submit" class="cursor-pointer">
+                                <span class="hover:underline">Search</span>
                             </button>
                         </div>
                     </fieldset>
-                    <div>
-                        <fieldset>
+                    <div class="col-start-3 col-span-8 row-start-2 mt-2">
+                        <fieldset class="lg:col-span-9 col-span-9 grid grid-cols-9">
                             <legend></legend>
-                            <div>
-                                <div>
-                                    <input type="radio" />
+                            <div class="flex items-center gap-4 col-start-1 col-span-9">
+                                <div class="col-start-1 col-span-2 flex items-center gap-3  ">
+                                    <input type="radio"  class="w-6 h-6 bg-[#202b58] cursor-pointer hover:bg-[#202b58] border-4 "/>
                                     <label for="">Undergraduate</label>
                                 </div>
-                                <div>
-                                    <input type="radio" />
+                                <div class="col-start-3 col-span-4 flex items-center gap-3">
+                                    <input type="radio" class="w-6 h-6 bg-[#202b58] cursor-pointer hover:bg-[#202b58] border-4 " />
                                     <label for="">Postgraduate taught</label>
                                 </div>
-                                <div>
-                                    <input type="radio" />
+                                <div class="col-start-5 col-span-6 flex items-center gap-3">
+                                    <input type="radio" class="w-6 h-6 bg-[#202b58] cursor-pointer hover:bg-[#202b58] border-4 " />
                                     <label for="">Postgraduate research</label>
                                 </div>
                             </div>
                         </fieldset>
                     </div>
+                    <footer class="col-start-10 col-span-3 flex flex-col justify-center cursor-pointer">
+                        <p class="underline">Courses by A-Z</p>
+                        <p class="underline">Courses by subject</p>
+                    </footer>
                 </form>
             </section>
             <!-- /search courses -->
+            
         </main>
 
     </body>
